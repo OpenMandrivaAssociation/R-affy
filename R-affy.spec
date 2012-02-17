@@ -1,10 +1,10 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  affy
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          1.32.1
-Release:          1
+Release:          2
 Summary:          Methods for Affymetrix Oligonucleotide Arrays
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2.0)
