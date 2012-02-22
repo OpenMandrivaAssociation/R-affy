@@ -10,19 +10,18 @@ Group:            Sciences/Mathematics
 License:          LGPL (>= 2.0)
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-Biobase 
-Requires:         R-affyio R-Biobase R-BiocInstaller R-graphics R-grDevices R-methods R-preprocessCore R-stats R-utils R-zlibbioc 
-%if %{with bootstrap}
-Requires:         R-tkWidgets
-%else
-Requires:         R-tkWidgets R-affydata 
+Requires:         R-Biobase R-affyio R-Biobase R-BiocInstaller R-graphics
+Requires:         R-grDevices R-methods R-preprocessCore R-stats R-utils
+Requires:         R-zlibbioc R-tkWidgets
+%if %{without bootstrap}
+Requires:         R-affydata
 %endif
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-Biobase
-BuildRequires:    R-affyio R-Biobase R-BiocInstaller R-graphics R-grDevices R-methods R-preprocessCore R-stats R-utils R-zlibbioc 
-%if %{with bootstrap}
-BuildRequires:    R-tkWidgets
-%else
-BuildRequires:    R-tkWidgets R-affydata 
+BuildRequires:    R-affyio R-Biobase R-BiocInstaller R-graphics
+BuildRequires:    R-grDevices R-methods R-preprocessCore R-stats R-utils
+BuildRequires:     R-zlibbioc R-tkWidgets
+%if %{without bootstrap}
+BuildRequires:    R-affydata
 %endif
 
 %description
