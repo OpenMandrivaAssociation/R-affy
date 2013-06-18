@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          1.32.1
-Release:          2
+Release:          3
 Summary:          Methods for Affymetrix Oligonucleotide Arrays
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2.0)
