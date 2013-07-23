@@ -1,4 +1,4 @@
-%bcond_with bootstrap
+%bcond_without bootstrap
 %global packname  affy
 %global rlibdir  %{_libdir}/R/library
 
