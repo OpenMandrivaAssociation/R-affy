@@ -8,7 +8,7 @@ Release:          1
 Summary:          Methods for Affymetrix Oligonucleotide Arrays
 Group:            Sciences/Mathematics
 License:          LGPL (>= 2.0)
-URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
+URL:              https://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/affy_1.38.1.tar.gz
 Requires:         R-Biobase R-affyio R-Biobase R-BiocInstaller R-graphics
 Requires:         R-grDevices R-methods R-preprocessCore R-stats R-utils
